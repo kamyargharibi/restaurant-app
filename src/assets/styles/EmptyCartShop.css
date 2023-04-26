@@ -1,0 +1,29 @@
+.emptyCartShop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyCartShop img {
+    width: 380px;
+    height: auto;
+}
+
+.emptyCartShop .emptyitems{
+    color: #272727;
+}
+
+.emptyCartShop .menuListBtn{
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.emptyCartShop .menuListBtn:hover{
+    background: #e0e0e0;
+}

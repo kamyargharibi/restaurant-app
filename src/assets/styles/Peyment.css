@@ -1,0 +1,36 @@
+.peyment {
+    width: 100%;
+    height: 70vh;
+    margin-top: 180px;
+}
+.peyment h1{
+    width: 100%;
+    text-align: center;
+    margin: 60px auto;
+    font-size: 60px;
+}
+
+.peyment .paymeny_h2{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    font-weight : 800;
+    font-size: 40px;
+    color: orangered;
+}
+
+
+@media screen and (max-width: 668px) {
+    .peyment h1{
+        width: 100%;
+        text-align: center;
+        margin: 60px auto;
+        font-size: 30px;
+    }
+    .peyment .paymeny_h2{
+        width: 100%;
+        text-align: center;
+        margin: 60px auto;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,303 @@
+.productDetail{
+    max-width: 1440px;
+    width: calc(100% - 50px);
+    height: auto;
+    margin: 70px auto;
+    min-height: 40rem;
+}
+
+.productDetail .productTitlePage .product_Title{
+    max-width: 240px;
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 140px;
+    border-bottom: 4px solid orange;
+}
+
+.productDetail .productInformation{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.productInformation .productImage{
+    width: 600px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.productInformation .productImage:hover{
+    opacity: 0.9;
+}
+
+.productInformation .productInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo .productTitle{
+    margin: 0;
+    font-size: 28px;
+    color: #272727;
+}
+
+.productInfo .productDiscription{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    color: #aaa;
+}
+
+.productCountBtn{
+    display: flex;
+    align-items: center;
+}
+
+.productInfo .add_Cart_Button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productInfo .productCountBtn .addToCart_Button{
+    width: 125px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background: #fff;
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+    animation: myAnim 300ms ease-in 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.productInfo .productCountBtn .addToCart_Button:hover{
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.productCountBtn .productCount{
+    width: 125px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: myAnim 200ms ease-in 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.productCountBtn  .productPrice {
+margin-bottom: 20px;
+}
+
+.productCount .productDisCountBtn{
+    border: none;
+    color: orange;
+    font-size: 35px;
+    background: transparent;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.productCount .productDisCountBtn:active{
+    color: red;
+}
+
+.productCount .productAddCountBbtn{
+    border: none;
+    color: orange;
+    font-size: 35px;
+    background: transparent;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.productCount .productAddCountBbtn:active{
+    color: greenyellow;
+}
+
+.productCount .productCurrentCountBox{
+    font-size: 18px;
+    text-align: right;
+    width: 40px;
+    height: 30px;
+    pointer-events: none;
+    border: 1px solid #eee;
+}
+
+.add_Cart_Button .productCheckoutBox{
+    width: 170px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.productCheckoutBox .productMenuBtn {
+    width: 170px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #fff;
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.productCheckoutBox .productCheckoutBtn {
+    width: 170px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background: #fff;
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.productCheckoutBox .productCheckoutBtn:hover{
+    background: #e0e0e0 !important;
+}
+
+.productCheckoutBox .productMenuBtn:hover{
+    background: #e0e0e0 !important;
+}
+
+@media screen and (max-width: 992px) {
+    .productInformation .productImage{
+        width: 750px;
+        margin-right: unset;
+    }
+
+    .productInfo .productDiscription {
+        margin-top: unset;
+        margin-bottom: 20px;
+    }
+
+    .productDetail .productInformation{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .productInfo .productDiscription{
+        max-width: 900px;
+    }
+
+    .productInfo .productTitle{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .productDetail .productTitlePage .product_Title{
+        width: 210px;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: unset;
+        border-bottom: 4px solid orange;
+    }
+
+    .productInformation .productImage{
+        width: 100%;
+        margin-right: unset;
+    }
+
+    .add_Cart_Button .productCheckoutBox {
+        width: 170px;
+        padding: 10px 10px;
+    }
+
+    .productCheckoutBox .productMenuBtn {
+        width: 170px;
+        padding: 5px 5px;
+    }
+
+    .productCheckoutBox .productCheckoutBtn {
+        width: 170px;
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .productDetail .productTitlePage .product_Title{
+        width: 180px;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 90px;
+        border-bottom: 4px solid orange;
+    }
+
+    .productInfo .productTitle {
+        font-size: 24px;
+    }
+
+    .productInfo .productCountBtn .addToCart_Button {
+        width: 125px;
+        padding: 5px 8px;
+        margin: 20px 0;
+    }
+
+    .productCountBtn .productCount{
+        margin: 20px 0;
+    }
+
+    .productCheckoutBox .productMenuBtn {
+        width: 160px;
+        padding: 5px 5px;
+    }
+
+    .productCheckoutBox .productCheckoutBtn {
+        width: 160px;
+        padding: 5px 5px;
+    }
+
+    .add_Cart_Button .productCheckoutBox {
+        width: 160px;
+        padding: 10px 10px;
+    }
+    .productCountBtn .productPrice{
+        margin-bottom: unset;
+    }
+    .productInfo .productDiscription{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

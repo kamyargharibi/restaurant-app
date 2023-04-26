@@ -1,0 +1,61 @@
+.ProductCommentBox {
+  margin: 30px 0;
+}
+
+.commentTitle {
+  max-width: 190px;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 4px solid orange;
+  margin-bottom: 30px;
+}
+
+.commentLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .commentTitle {
+    width: 140px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* Style Comment.jsx Component */
+
+.commentItem {
+  display: flex;
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+}
+
+.commentImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.commentItemInfo .commentName {
+  margin: 0;
+  padding: 5px;
+}
+
+.commentItemInfo .commentMessage {
+  margin: 0;
+  padding: 5px;
+}
+
+.commentItemInfo .commentDate {
+  font-size: 14px;
+  color: #bbb;
+  padding: 5px;
+}
+
+/* Style Comment.jsx Component */

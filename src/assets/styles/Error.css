@@ -1,0 +1,48 @@
+.error404{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.errortop{
+    width: 100%;
+    height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error h1{
+    font-size: 60px;
+    background: -webkit-linear-gradient(140deg, yellow 30%, #ff6600 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error .errorlink{
+    text-decoration: none;
+    color: #272727;
+    border: 1px solid orange;
+    padding: 5px 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.error .errorlink:hover{
+    background: #e0e0e0;
+}
+
+@media only screen and (max-width: 600px) {
+    .error h1{
+        font-size: 45px;
+    }
+}
